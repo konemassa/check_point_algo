@@ -1,0 +1,38 @@
+
+ALGORITHME: phrase;
+
+var
+    nbrmot, nbrcarac, nbrvoyel, i: integer;
+    phra: string;
+    nbrmot:=0;
+    nbrcarac:=0;
+    nbrvoyel:=0;
+    i:=0;
+begin
+    
+    write("Entrer votre phrase qui se termine par un point");
+    read(phra);
+        //* recherche de la longueur de la phrase *//
+        for i from 0 to phra[i]="." setp 1 do
+        end
+        nbrcarac:=i+1;
+        read("Votre phrase compte : "nbrcarac" de caractere")
+        
+        //* recherche du nombre de mot *//
+        for i from 0 to (nbrcarac-1) setp 1 do
+            if (phra[i]=" ") then
+                nbrmot:=nbrmot+1;
+            end if
+        end
+            
+            read("Votre phrase compte : "nbrmot+1" de mot")
+        
+        //* recherche du nombre de voyelle dans la phrase *//
+        for i from 0 to (nbrcarac-1) setp 1 do
+            if (phra[i]="a" or phra[i]="e" or phra[i]="i" or phra[i]="o" or phra[i]="u" or phra[i]="y" ) then
+                nbrvoyel:=nbrvoyel+1;
+            end if
+        end
+            
+            read("Votre phrase compte : "nbrvoyel" de voyelle")        
+end
